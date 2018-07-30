@@ -1,0 +1,13 @@
+<br />
+<%= @num %> Your Change is <br />
+
+<%if@sum1!=0%><%=@sum1%> 100 dollar<%if@sum1==1%> bill<%else%> bills<%end%><%end%><%if@sum1!=0 && (@sum2!=0||@sum3!=0||@sum4!=0||@sum5!=0||@sum6!=0||@sum7!=0||@sum8!=0||@sum9!=0||@sum10!=0)%>, <%end%>
+<%if@sum2!=0 && (@sum3==0&&@sum4==0&&@sum5==0&&@sum6==0&&@sum7==0&&@sum8==0&&@sum9==0&&@sum10==0)%>and <%end%><%if@sum2!=0%><%=@sum2%> 50 dollar<%if@sum2==1%> bill<%else%> bills<%end%><%end%><%if@sum2!=0 && (@sum3!=0||@sum4!=0||@sum5!=0||@sum6!=0||@sum7!=0||@sum8!=0||@sum9!=0||@sum10!=0)%>, <%end%>
+<%if@sum3!=0 && (@sum4==0&&@sum5==0&&@sum6==0&&@sum7==0&&@sum8==0&&@sum9==0&&@sum10==0)%>and <%end%><%if@sum3!=0%><%=@sum3%> 20 dollar<%if@sum3==1%> bill<%else%> bills<%end%><%end%><%if@sum3!=0 && (@sum4!=0||@sum5!=0||@sum6!=0||@sum7!=0||@sum8!=0||@sum9!=0||@sum10!=0)%>, <%end%>
+<%if@sum4!=0 && (@sum5==0&&@sum6==0&&@sum7==0&&@sum8==0&&@sum9==0&&@sum10==0)%>and <%end%><%if@sum4!=0%><%=@sum4%> 10 dollar<%if@sum4==1%> bill<%else%> bills<%end%><%end%><%if@sum4!=0 && (@sum5!=0||@sum6!=0||@sum7!=0||@sum8!=0||@sum9!=0||@sum10!=0)%>, <%end%>
+<%if@sum5!=0 && (@sum6==0&&@sum7==0&&@sum8==0&&@sum9==0&&@sum10==0)%>and <%end%><%if@sum5!=0%><%=@sum5%> 5 dollar<%if@sum5==1%> bill<%else%> bills<%end%><%end%><%if@sum5!=0 && (@sum6!=0||@sum7!=0||@sum8!=0||@sum9!=0||@sum10!=0)%>, <%end%>
+<%if@sum6!=0 && (@sum7==0&&@sum8==0&&@sum9==0&&@sum10==0)%>and <%end%><%if@sum6!=0%><%=@sum6%> 1 dollar<%if@sum6==1%> bill<%else%> bills<%end%><%end%><%if@sum6!=0 && (@sum7!=0||@sum8!=0||@sum9!=0||@sum10!=0)%>, <%end%>
+<%if@sum7!=0 && (@sum8==0&&@sum9==0&&@sum10==0)%>and <%end%><%if@sum7!=0%><%=@sum7%><%if@sum7==1%> quarter<%else%> quarters<%end%><%end%><%if@sum7!=0 && (@sum8!=0||@sum9!=0||@sum10!=0)%>, <%end%>
+<%if@sum8!=0 && (@sum9==0&&@sum10==0)%>and <%end%><%if@sum8!=0%><%=@sum8%><%if@sum8==1%> dime<%else%> dimes<%end%><%end%><%if@sum8!=0 && (@sum9!=0||@sum10!=0)%>, <%end%>
+<%if@sum9!=0 && (@sum10==0)%>and <%end%><%if@sum9!=0%><%=@sum9%><%if@sum9==1%> nickel<%else%> nickels<%end%><%end%><%if@sum9!=0 && (@sum10!=0)%>, <%end%>
+<%if@sum10!=0%>and <%end%><%if@sum10!=0%><%=@sum10%><%if@sum10==1%> pennie<%else%> pennies<%end%><%end%>

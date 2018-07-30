@@ -1,0 +1,31 @@
+<div class="container">
+	<h2>Enter of Amount</h2>
+	<div class="form-group">
+	    <label for="email">USD :</label>
+	    <input type="number" class="form-control" id="number" step="0.01" value="<%=@num%>" />
+	</div>
+
+	<button id="calculate"  class="w3-button w3-green">Your change</button>
+
+	<br />
+
+	<div id="solution"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$("#calculate").click(function(){
+		$.ajax({  
+			type:"get",
+			url:"solution",
+			data : {
+				num : $("#number").val()
+			},
+			success : function(data){
+				$("#solution").html(data);
+			}
+		})
+	})
+</script>    
+
+
